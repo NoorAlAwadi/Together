@@ -7,49 +7,53 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        // Create a white border with defined width
-//        imgView.layer.borderColor = [UIColor Black].CGColor
-//        imgView.layer.borderWidth = 1.5;
-        
-        // Do any additional setup after loading the view, typically from a nib.
+  
+
+    @IBOutlet weak var rememberBtn: UIButton!
+    @IBOutlet weak var forgetPassBtn: UIButton!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passTxt: UITextField!
+    @IBOutlet weak var labelName: UILabel!
+    
+    @IBOutlet weak var firstLbl: UILabel!
+    @IBAction func firstNextBtn(_ sender: UIButton) {
+        self.firstLbl.text = "Ok clicked"
     }
+    var clickCount = 0
     
     
-    
-   
-    @IBOutlet var cityButtons: [UIButton]!
-    
-    @IBAction func handleSelection(_ sender: UIButton) {
-    
-        cityButtons.forEach { (button) in
-            UIView.animate(withDuration: 0.3, animations: {
-                
-                 button.isHidden = !button.isHidden
-                })
-           
+    @IBAction func btnLogin(_ sender: Any) {
+        let userEmail = emailTxt.text
+        let userPass = passTxt.text
+       
+        Auth.auth().createUser(withEmail: userEmail!, password: userPass!){
+            (user, error) in
+            
+            if error == nil {
+                self.labelName.text = "You are successfully registered"
+            }else{
+                self.labelName.text = "Registration Failed.. Please Try Again"
+            }
+            
         }
         
-       
-       
+        clickCount+=1
+        labelName.text="You clicked \(clickCount) times"
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        FirebaseApp.configure()
+     
     }
     
-    @IBAction func cityTapped(_ sender: UIButton) {
-    }
     
     
-//    let layer = CAGradientLayer()
-//    layer.frame = view.bounds
-//    layer.colors = [UIColor.yellow.cgColor, UIColor.green.cgColor]
-//    layer.startPoint = CGPoint(0,0)
-//    layer.stopPoint = CGPoint(1,1)
-//    view.layer.addSubLayer(layer)
-
-
+//
+//
     
 
 }

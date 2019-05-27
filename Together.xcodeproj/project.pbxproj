@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CFB167A3FB3B57EF5FAAD1D /* libPods-Together.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D04EEEE3D8DAE92199E4B04 /* libPods-Together.a */; };
+		32578338229C047F0087F94F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32578337229C047F0087F94F /* GoogleService-Info.plist */; };
+		32578339229C047F0087F94F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32578337229C047F0087F94F /* GoogleService-Info.plist */; };
+		3257833A229C047F0087F94F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32578337229C047F0087F94F /* GoogleService-Info.plist */; };
 		F05EE658225643A000CCB7B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05EE657225643A000CCB7B1 /* AppDelegate.swift */; };
 		F05EE65A225643A000CCB7B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05EE659225643A000CCB7B1 /* ViewController.swift */; };
 		F05EE65D225643A000CCB7B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05EE65B225643A000CCB7B1 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32578337229C047F0087F94F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3276008AE6748A37D8EDFAEF /* Pods-Together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Together.debug.xcconfig"; path = "Target Support Files/Pods-Together/Pods-Together.debug.xcconfig"; sourceTree = "<group>"; };
+		5288331FAD4A688FE3FA3B71 /* Pods-Together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Together.release.xcconfig"; path = "Target Support Files/Pods-Together/Pods-Together.release.xcconfig"; sourceTree = "<group>"; };
+		7D04EEEE3D8DAE92199E4B04 /* libPods-Together.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Together.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05EE654225643A000CCB7B1 /* Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Together.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05EE657225643A000CCB7B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F05EE659225643A000CCB7B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFB167A3FB3B57EF5FAAD1D /* libPods-Together.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E63EA8403A024D7E091F1C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3276008AE6748A37D8EDFAEF /* Pods-Together.debug.xcconfig */,
+				5288331FAD4A688FE3FA3B71 /* Pods-Together.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B0B1547D8371E61CF5256E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D04EEEE3D8DAE92199E4B04 /* libPods-Together.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F05EE64B225643A000CCB7B1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				F05EE66B225643A100CCB7B1 /* TogetherTests */,
 				F05EE676225643A100CCB7B1 /* TogetherUITests */,
 				F05EE655225643A000CCB7B1 /* Products */,
+				5E63EA8403A024D7E091F1C7 /* Pods */,
+				9B0B1547D8371E61CF5256E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +126,7 @@
 		F05EE656225643A000CCB7B1 /* Together */ = {
 			isa = PBXGroup;
 			children = (
+				32578337229C047F0087F94F /* GoogleService-Info.plist */,
 				F05EE657225643A000CCB7B1 /* AppDelegate.swift */,
 				F05EE659225643A000CCB7B1 /* ViewController.swift */,
 				F05EE65B225643A000CCB7B1 /* Main.storyboard */,
@@ -132,6 +162,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F05EE67C225643A100CCB7B1 /* Build configuration list for PBXNativeTarget "Together" */;
 			buildPhases = (
+				160FFEEEA4639B4296AB9A97 /* [CP] Check Pods Manifest.lock */,
 				F05EE650225643A000CCB7B1 /* Sources */,
 				F05EE651225643A000CCB7B1 /* Frameworks */,
 				F05EE652225643A000CCB7B1 /* Resources */,
@@ -230,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F05EE662225643A100CCB7B1 /* LaunchScreen.storyboard in Resources */,
+				32578338229C047F0087F94F /* GoogleService-Info.plist in Resources */,
 				F05EE65F225643A100CCB7B1 /* Assets.xcassets in Resources */,
 				F05EE65D225643A000CCB7B1 /* Main.storyboard in Resources */,
 			);
@@ -239,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32578339229C047F0087F94F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +279,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3257833A229C047F0087F94F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		160FFEEEA4639B4296AB9A97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Together-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F05EE650225643A000CCB7B1 /* Sources */ = {
@@ -430,6 +489,7 @@
 		};
 		F05EE67D225643A100CCB7B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3276008AE6748A37D8EDFAEF /* Pods-Together.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +508,7 @@
 		};
 		F05EE67E225643A100CCB7B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5288331FAD4A688FE3FA3B71 /* Pods-Together.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
