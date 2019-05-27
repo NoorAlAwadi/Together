@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  Together
-//
+// chnge by Philippe
 //  Created by MobileProg on 4/4/19.
 //  Copyright © 2019 MobileProg. All rights reserved.
 //
